@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection"/>
+    <meta charset="UTF-8">
+    <title>Craftistry Hub</title>
+<!-- External CSS -->
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="...">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="..." defer></script>
+
+<script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+    <a href="home.html" class="logo"><img src="img/logo.png" alt="" class="logo"></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link active">Cart</a></li>
+                    <li class="nav-item"><a href="me.html" class="nav-link">Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    
+      <section id="cart" class="section-p1">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items">
+          </div>
+        <div class="cart-totals">
+          <p>Cart Subtotal: <span id="cart-subtotal">55.00 pesos</span></p>
+          <p>Shipping: <span id="shipping-cost">15.00 pesos</span></p>
+          <p><strong>Total: <span id="total-price">70.00 pesos</span></strong></p>
+        </div>
+      </section>
+    
+      <section id="form-details" class="section-p1">  <form action="">
+        <span><h1>Checkout Form</h1></span>
+        <br>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control shadow-none" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control shadow-none" id="email" />
+        </div>
+        <div class="form-group">
+            <label for="email">Phone Number</label>
+            <input type="email" class="form-control shadow-none" id="email" />
+          </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control shadow-none" rows="5" placeholder="Type your message here"></textarea>
+        </div>
+  
+          <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+              <option value=""> Select Payment Method </option>
+              <option value="cod">Cash on Delivery</option>
+              <option value="online">Online Payment</option>
+            </select>
+          </div>
+          <button type="submit" class="my-button">Place Order</button>
+        </form>
+      </section>
+    
+    
+    <!-- Footer Section -->
+    <footer class="section-p1">
+        <!-- Footer Columns -->
+        <div class="col">
+            <h4>Contact</h4>
+            <p><Strong>Adress:</Strong> Sibagat, Agusan del Sur </p>
+            <p><Strong>Phone:</Strong> 09664607289 </p>
+            <p><Strong>Hours:</Strong> 10:00am -11:00pm, Mon - Fri </p>
+        <div class="copyright">
+            <p>&copy; 2024, Web Development Project - Babad, Lorriane Jane Paquiding </p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="./js/capacitor-welcome.js" type="module"></script>
+</body>
+
+</html>
